@@ -1,4 +1,4 @@
+const TestLasso = require('./lasso.js').TestLasso;
 
-
-var filename = 'diabetes.data';
+var filename = '../data/diabetes.data';
 TestLasso.main(filename);

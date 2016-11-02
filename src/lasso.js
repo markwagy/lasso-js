@@ -11,6 +11,8 @@
 // MathUtil
 // --------------------
 
+const fs = require('fs');
+
 function MathUtil() {}
 
 MathUtil.getAvg = function(arr) {
@@ -536,6 +538,5 @@ TestLasso.main = function(filename) {
 	console.log(fit.toString());
 };
 
-var fs = require('fs');
-var filename = '../data/diabetes.data';
-TestLasso.main(filename);
+module.exports.TestLasso = TestLasso;
+module.exports.LassoFit = LassoFit;
